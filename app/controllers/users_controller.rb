@@ -8,9 +8,9 @@ class UsersController < ApplicationController
 
     if @user.save
       p 'user saved!'
-      #TODO need to redirect at a point
+      render 'create'
     else
-      render 'new'
+      render '/'
     end
   end
 
